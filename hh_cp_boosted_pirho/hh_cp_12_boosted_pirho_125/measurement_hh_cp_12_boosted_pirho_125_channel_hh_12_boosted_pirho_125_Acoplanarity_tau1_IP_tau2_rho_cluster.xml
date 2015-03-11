@@ -1,0 +1,86 @@
+<!--
+This xml file created automatically on: 
+2015-3-10
+-->
+<!DOCTYPE Channel  SYSTEM 'HistFactorySchema.dtd'>  
+
+  <Channel Name="channel_hh_12_boosted_pirho_125_Acoplanarity_tau1_IP_tau2_rho_cluster" InputFile="hh_cp_12_boosted_pirho_125.root" >
+
+    <Data HistoName="hh_category_boosted_pirho_Data_125_Acoplanarity_tau1_IP_tau2_rho_cluster" InputFile="hh_cp_12_boosted_pirho_125.root" HistoPath="/channel_hh_12_boosted_pirho_125_Acoplanarity_tau1_IP_tau2_rho_cluster_hists/data/" /> 
+
+    <StatErrorConfig RelErrorThreshold="0.05" ConstraintType="Poisson" /> 
+
+    <Sample Name="Fakes" HistoPath="/channel_hh_12_boosted_pirho_125_Acoplanarity_tau1_IP_tau2_rho_cluster_hists/Fakes/" HistoName="hh_category_boosted_pirho_Fakes_125_Acoplanarity_tau1_IP_tau2_rho_cluster" InputFile="hh_cp_12_boosted_pirho_125.root" NormalizeByTheory="False" >
+      <NormFactor Name="ATLAS_norm_HH_2012_QCD" Val="1" High="50" Low="0" Const="False" /> 
+    </Sample>
+
+
+    <Sample Name="Others" HistoPath="/channel_hh_12_boosted_pirho_125_Acoplanarity_tau1_IP_tau2_rho_cluster_hists/Others/" HistoName="hh_category_boosted_pirho_Others_125_Acoplanarity_tau1_IP_tau2_rho_cluster" InputFile="hh_cp_12_boosted_pirho_125.root" NormalizeByTheory="True" >
+      <OverallSys Name="ATLAS_LUMI_2012" High="1.028" Low="0.972" /> 
+    </Sample>
+
+
+    <Sample Name="Ztautau" HistoPath="/channel_hh_12_boosted_pirho_125_Acoplanarity_tau1_IP_tau2_rho_cluster_hists/Ztautau/" HistoName="hh_category_boosted_pirho_Ztautau_125_Acoplanarity_tau1_IP_tau2_rho_cluster" InputFile="hh_cp_12_boosted_pirho_125.root" NormalizeByTheory="False" >
+      <OverallSys Name="ATLAS_ANA_HH_2012_Isolation" High="1.06" Low="0.94" /> 
+      <NormFactor Name="ATLAS_norm_HH_2012_Ztt" Val="1" High="50" Low="0" Const="False" /> 
+    </Sample>
+
+
+    <Sample Name="Signal_Z_125" HistoPath="/channel_hh_12_boosted_pirho_125_Acoplanarity_tau1_IP_tau2_rho_cluster_hists/Signal_Z_125/" HistoName="hh_category_boosted_pirho_Signal_Z_125_Acoplanarity_tau1_IP_tau2_rho_cluster" InputFile="hh_cp_12_boosted_pirho_125.root" NormalizeByTheory="True" >
+      <OverallSys Name="ATLAS_LUMI_2012" High="1.028" Low="0.972" /> 
+      <NormFactor Name="hypo1_frac" Val="0" High="1" Low="0" Const="False" /> 
+      <NormFactor Name="Nev_Signal_Z_125_boosted_pirho" Val="0.445" High="100" Low="0" Const="False" /> 
+    </Sample>
+
+
+    <Sample Name="Signal_W_125" HistoPath="/channel_hh_12_boosted_pirho_125_Acoplanarity_tau1_IP_tau2_rho_cluster_hists/Signal_W_125/" HistoName="hh_category_boosted_pirho_Signal_W_125_Acoplanarity_tau1_IP_tau2_rho_cluster" InputFile="hh_cp_12_boosted_pirho_125.root" NormalizeByTheory="True" >
+      <OverallSys Name="ATLAS_LUMI_2012" High="1.028" Low="0.972" /> 
+      <NormFactor Name="hypo1_frac" Val="0" High="1" Low="0" Const="False" /> 
+      <NormFactor Name="Nev_Signal_W_125_boosted_pirho" Val="0.867" High="100" Low="0" Const="False" /> 
+    </Sample>
+
+
+    <Sample Name="Signal_gg_125" HistoPath="/channel_hh_12_boosted_pirho_125_Acoplanarity_tau1_IP_tau2_rho_cluster_hists/Signal_gg_125/" HistoName="hh_category_boosted_pirho_Signal_gg_125_Acoplanarity_tau1_IP_tau2_rho_cluster" InputFile="hh_cp_12_boosted_pirho_125.root" NormalizeByTheory="True" >
+      <OverallSys Name="ATLAS_LUMI_2012" High="1.028" Low="0.972" /> 
+      <NormFactor Name="hypo1_frac" Val="0" High="1" Low="0" Const="False" /> 
+      <NormFactor Name="Nev_Signal_gg_125_boosted_pirho" Val="3.9" High="100" Low="0" Const="False" /> 
+    </Sample>
+
+
+    <Sample Name="Signal_VBF_125" HistoPath="/channel_hh_12_boosted_pirho_125_Acoplanarity_tau1_IP_tau2_rho_cluster_hists/Signal_VBF_125/" HistoName="hh_category_boosted_pirho_Signal_VBF_125_Acoplanarity_tau1_IP_tau2_rho_cluster" InputFile="hh_cp_12_boosted_pirho_125.root" NormalizeByTheory="True" >
+      <OverallSys Name="ATLAS_LUMI_2012" High="1.028" Low="0.972" /> 
+      <NormFactor Name="hypo1_frac" Val="0" High="1" Low="0" Const="False" /> 
+      <NormFactor Name="Nev_Signal_VBF_125_boosted_pirho" Val="1.311" High="100" Low="0" Const="False" /> 
+    </Sample>
+
+
+    <Sample Name="Signal_Odd_Z_125" HistoPath="/channel_hh_12_boosted_pirho_125_Acoplanarity_tau1_IP_tau2_rho_cluster_hists/Signal_Odd_Z_125/" HistoName="hh_category_boosted_pirho_Signal_Odd_Z_125_Acoplanarity_tau1_IP_tau2_rho_cluster" InputFile="hh_cp_12_boosted_pirho_125.root" NormalizeByTheory="True" >
+      <OverallSys Name="ATLAS_LUMI_2012" High="1.028" Low="0.972" /> 
+      <NormFactor Name="one_minus_h1f" Val="0" High="1" Low="0" Const="False" /> 
+      <NormFactor Name="Nev_Signal_Odd_Z_125_boosted_pirho" Val="0.445" High="100" Low="0" Const="False" /> 
+    </Sample>
+
+
+    <Sample Name="Signal_Odd_W_125" HistoPath="/channel_hh_12_boosted_pirho_125_Acoplanarity_tau1_IP_tau2_rho_cluster_hists/Signal_Odd_W_125/" HistoName="hh_category_boosted_pirho_Signal_Odd_W_125_Acoplanarity_tau1_IP_tau2_rho_cluster" InputFile="hh_cp_12_boosted_pirho_125.root" NormalizeByTheory="True" >
+      <OverallSys Name="ATLAS_LUMI_2012" High="1.028" Low="0.972" /> 
+      <NormFactor Name="one_minus_h1f" Val="0" High="1" Low="0" Const="False" /> 
+      <NormFactor Name="Nev_Signal_Odd_W_125_boosted_pirho" Val="0.867" High="100" Low="0" Const="False" /> 
+    </Sample>
+
+
+    <Sample Name="Signal_Odd_gg_125" HistoPath="/channel_hh_12_boosted_pirho_125_Acoplanarity_tau1_IP_tau2_rho_cluster_hists/Signal_Odd_gg_125/" HistoName="hh_category_boosted_pirho_Signal_Odd_gg_125_Acoplanarity_tau1_IP_tau2_rho_cluster" InputFile="hh_cp_12_boosted_pirho_125.root" NormalizeByTheory="True" >
+      <OverallSys Name="ATLAS_LUMI_2012" High="1.028" Low="0.972" /> 
+      <NormFactor Name="one_minus_h1f" Val="0" High="1" Low="0" Const="False" /> 
+      <NormFactor Name="Nev_Signal_Odd_gg_125_boosted_pirho" Val="3.9" High="100" Low="0" Const="False" /> 
+    </Sample>
+
+
+    <Sample Name="Signal_Odd_VBF_125" HistoPath="/channel_hh_12_boosted_pirho_125_Acoplanarity_tau1_IP_tau2_rho_cluster_hists/Signal_Odd_VBF_125/" HistoName="hh_category_boosted_pirho_Signal_Odd_VBF_125_Acoplanarity_tau1_IP_tau2_rho_cluster" InputFile="hh_cp_12_boosted_pirho_125.root" NormalizeByTheory="True" >
+      <OverallSys Name="ATLAS_LUMI_2012" High="1.028" Low="0.972" /> 
+      <NormFactor Name="one_minus_h1f" Val="0" High="1" Low="0" Const="False" /> 
+      <NormFactor Name="Nev_Signal_Odd_VBF_125_boosted_pirho" Val="1.311" High="100" Low="0" Const="False" /> 
+    </Sample>
+
+
+
+  </Channel>  

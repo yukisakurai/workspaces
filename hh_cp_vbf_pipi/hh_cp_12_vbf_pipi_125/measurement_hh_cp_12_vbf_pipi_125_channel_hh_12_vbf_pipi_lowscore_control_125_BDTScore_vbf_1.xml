@@ -1,0 +1,86 @@
+<!--
+This xml file created automatically on: 
+2015-3-10
+-->
+<!DOCTYPE Channel  SYSTEM 'HistFactorySchema.dtd'>  
+
+  <Channel Name="channel_hh_12_vbf_pipi_lowscore_control_125_BDTScore_vbf_1" InputFile="hh_cp_12_vbf_pipi_125.root" >
+
+    <Data HistoName="hh_category_vbf_pipi_lowscore_control_Data_125_BDTScore_vbf_1_uniform" InputFile="hh_cp_12_vbf_pipi_125.root" HistoPath="/channel_hh_12_vbf_pipi_lowscore_control_125_BDTScore_vbf_1_hists/data/" /> 
+
+    <StatErrorConfig RelErrorThreshold="0.05" ConstraintType="Poisson" /> 
+
+    <Sample Name="Fakes" HistoPath="/channel_hh_12_vbf_pipi_lowscore_control_125_BDTScore_vbf_1_hists/Fakes/" HistoName="hh_category_vbf_pipi_lowscore_control_Fakes_125_BDTScore_vbf_1_uniform" InputFile="hh_cp_12_vbf_pipi_125.root" NormalizeByTheory="False" >
+      <NormFactor Name="ATLAS_norm_HH_2012_QCD" Val="1" High="50" Low="0" Const="False" /> 
+    </Sample>
+
+
+    <Sample Name="Others" HistoPath="/channel_hh_12_vbf_pipi_lowscore_control_125_BDTScore_vbf_1_hists/Others/" HistoName="hh_category_vbf_pipi_lowscore_control_Others_125_BDTScore_vbf_1_uniform" InputFile="hh_cp_12_vbf_pipi_125.root" NormalizeByTheory="True" >
+      <OverallSys Name="ATLAS_LUMI_2012" High="1.028" Low="0.972" /> 
+    </Sample>
+
+
+    <Sample Name="Ztautau" HistoPath="/channel_hh_12_vbf_pipi_lowscore_control_125_BDTScore_vbf_1_hists/Ztautau/" HistoName="hh_category_vbf_pipi_lowscore_control_Ztautau_125_BDTScore_vbf_1_uniform" InputFile="hh_cp_12_vbf_pipi_125.root" NormalizeByTheory="False" >
+      <OverallSys Name="ATLAS_ANA_HH_2012_Isolation" High="1.06" Low="0.94" /> 
+      <NormFactor Name="ATLAS_norm_HH_2012_Ztt" Val="1" High="50" Low="0" Const="False" /> 
+    </Sample>
+
+
+    <Sample Name="Signal_Z_125" HistoPath="/channel_hh_12_vbf_pipi_lowscore_control_125_BDTScore_vbf_1_hists/Signal_Z_125/" HistoName="hh_category_vbf_pipi_lowscore_control_Signal_Z_125_BDTScore_vbf_1_uniform" InputFile="hh_cp_12_vbf_pipi_125.root" NormalizeByTheory="True" >
+      <OverallSys Name="ATLAS_LUMI_2012" High="1.028" Low="0.972" /> 
+      <NormFactor Name="hypo1_frac" Val="0" High="1" Low="0" Const="False" /> 
+      <NormFactor Name="Nev_Signal_Z_125_vbf_pipi_lowscore_control" Val="0.102" High="100" Low="0" Const="False" /> 
+    </Sample>
+
+
+    <Sample Name="Signal_W_125" HistoPath="/channel_hh_12_vbf_pipi_lowscore_control_125_BDTScore_vbf_1_hists/Signal_W_125/" HistoName="hh_category_vbf_pipi_lowscore_control_Signal_W_125_BDTScore_vbf_1_uniform" InputFile="hh_cp_12_vbf_pipi_125.root" NormalizeByTheory="True" >
+      <OverallSys Name="ATLAS_LUMI_2012" High="1.028" Low="0.972" /> 
+      <NormFactor Name="hypo1_frac" Val="0" High="1" Low="0" Const="False" /> 
+      <NormFactor Name="Nev_Signal_W_125_vbf_pipi_lowscore_control" Val="0.185" High="100" Low="0" Const="False" /> 
+    </Sample>
+
+
+    <Sample Name="Signal_gg_125" HistoPath="/channel_hh_12_vbf_pipi_lowscore_control_125_BDTScore_vbf_1_hists/Signal_gg_125/" HistoName="hh_category_vbf_pipi_lowscore_control_Signal_gg_125_BDTScore_vbf_1_uniform" InputFile="hh_cp_12_vbf_pipi_125.root" NormalizeByTheory="True" >
+      <OverallSys Name="ATLAS_LUMI_2012" High="1.028" Low="0.972" /> 
+      <NormFactor Name="hypo1_frac" Val="0" High="1" Low="0" Const="False" /> 
+      <NormFactor Name="Nev_Signal_gg_125_vbf_pipi_lowscore_control" Val="4.87" High="100" Low="0" Const="False" /> 
+    </Sample>
+
+
+    <Sample Name="Signal_VBF_125" HistoPath="/channel_hh_12_vbf_pipi_lowscore_control_125_BDTScore_vbf_1_hists/Signal_VBF_125/" HistoName="hh_category_vbf_pipi_lowscore_control_Signal_VBF_125_BDTScore_vbf_1_uniform" InputFile="hh_cp_12_vbf_pipi_125.root" NormalizeByTheory="True" >
+      <OverallSys Name="ATLAS_LUMI_2012" High="1.028" Low="0.972" /> 
+      <NormFactor Name="hypo1_frac" Val="0" High="1" Low="0" Const="False" /> 
+      <NormFactor Name="Nev_Signal_VBF_125_vbf_pipi_lowscore_control" Val="3.592" High="100" Low="0" Const="False" /> 
+    </Sample>
+
+
+    <Sample Name="Signal_Odd_Z_125" HistoPath="/channel_hh_12_vbf_pipi_lowscore_control_125_BDTScore_vbf_1_hists/Signal_Odd_Z_125/" HistoName="hh_category_vbf_pipi_lowscore_control_Signal_Odd_Z_125_BDTScore_vbf_1_uniform" InputFile="hh_cp_12_vbf_pipi_125.root" NormalizeByTheory="True" >
+      <OverallSys Name="ATLAS_LUMI_2012" High="1.028" Low="0.972" /> 
+      <NormFactor Name="one_minus_h1f" Val="0" High="1" Low="0" Const="False" /> 
+      <NormFactor Name="Nev_Signal_Odd_Z_125_vbf_pipi_lowscore_control" Val="0.102" High="100" Low="0" Const="False" /> 
+    </Sample>
+
+
+    <Sample Name="Signal_Odd_W_125" HistoPath="/channel_hh_12_vbf_pipi_lowscore_control_125_BDTScore_vbf_1_hists/Signal_Odd_W_125/" HistoName="hh_category_vbf_pipi_lowscore_control_Signal_Odd_W_125_BDTScore_vbf_1_uniform" InputFile="hh_cp_12_vbf_pipi_125.root" NormalizeByTheory="True" >
+      <OverallSys Name="ATLAS_LUMI_2012" High="1.028" Low="0.972" /> 
+      <NormFactor Name="one_minus_h1f" Val="0" High="1" Low="0" Const="False" /> 
+      <NormFactor Name="Nev_Signal_Odd_W_125_vbf_pipi_lowscore_control" Val="0.185" High="100" Low="0" Const="False" /> 
+    </Sample>
+
+
+    <Sample Name="Signal_Odd_gg_125" HistoPath="/channel_hh_12_vbf_pipi_lowscore_control_125_BDTScore_vbf_1_hists/Signal_Odd_gg_125/" HistoName="hh_category_vbf_pipi_lowscore_control_Signal_Odd_gg_125_BDTScore_vbf_1_uniform" InputFile="hh_cp_12_vbf_pipi_125.root" NormalizeByTheory="True" >
+      <OverallSys Name="ATLAS_LUMI_2012" High="1.028" Low="0.972" /> 
+      <NormFactor Name="one_minus_h1f" Val="0" High="1" Low="0" Const="False" /> 
+      <NormFactor Name="Nev_Signal_Odd_gg_125_vbf_pipi_lowscore_control" Val="4.87" High="100" Low="0" Const="False" /> 
+    </Sample>
+
+
+    <Sample Name="Signal_Odd_VBF_125" HistoPath="/channel_hh_12_vbf_pipi_lowscore_control_125_BDTScore_vbf_1_hists/Signal_Odd_VBF_125/" HistoName="hh_category_vbf_pipi_lowscore_control_Signal_Odd_VBF_125_BDTScore_vbf_1_uniform" InputFile="hh_cp_12_vbf_pipi_125.root" NormalizeByTheory="True" >
+      <OverallSys Name="ATLAS_LUMI_2012" High="1.028" Low="0.972" /> 
+      <NormFactor Name="one_minus_h1f" Val="0" High="1" Low="0" Const="False" /> 
+      <NormFactor Name="Nev_Signal_Odd_VBF_125_vbf_pipi_lowscore_control" Val="3.592" High="100" Low="0" Const="False" /> 
+    </Sample>
+
+
+
+  </Channel>  
