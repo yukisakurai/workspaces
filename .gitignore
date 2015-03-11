@@ -1,2 +1,4 @@
 hh_cp"
 */*.root
+*/*.xml
+*/*.dtd
